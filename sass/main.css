@@ -153,7 +153,8 @@ body {
   background-position: top;
   background-repeat: no-repeat;
   height: 95vh;
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0% 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0% 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 75vh, 0% 100%);
   position: relative;
 }
 .header__hero-box {
@@ -162,6 +163,4 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=main.css.map */
