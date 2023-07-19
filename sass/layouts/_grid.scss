@@ -1,0 +1,23 @@
+.row {
+  max-width: $grid-width;
+  margin: 0 auto;
+
+  &:not(:last-child) {
+    margin-bottom: $gap-vertical;
+  }
+
+  @include clearfix;
+
+  //this is for all class attr that starts with col-
+  [class^="col-"] {
+    float: left;
+
+    &:not(:last-child) {
+      margin-right: $gap-horizontal;
+    }
+  }
+
+  .col-1-of-2 {
+    width: calc((100% - #{$gap-horizontal}) / 2);
+  }
+}
