@@ -154,7 +154,7 @@ body {
   cursor: pointer;
 }
 .btn:hover {
-  transform: translateY(-0.3);
+  transform: translateY(-0.3rem);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 .btn:hover::after {
@@ -173,6 +173,13 @@ body {
 .btn--white::after {
   background-color: #fff;
   color: #777;
+}
+.btn--green {
+  background-color: #55c57a;
+  color: #ffffff;
+}
+.btn--green::after {
+  background-color: #55c57a;
 }
 .btn--animated {
   animation-name: moveInBottom;
@@ -202,19 +209,14 @@ body {
   transition: all 0.2s;
 }
 .btn--text:link:hover, .btn--text:visited:hover {
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  transform: translateY(0);
+  background-color: #55c57a;
+  color: #ffffff;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  transform: translateY(-3px);
 }
 .btn--text:link:active, .btn--text:visited:active {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   transform: translateY(0);
-}
-.btn--green {
-  background-color: #55c57a;
-  color: #ffffff;
-}
-.btn--green::after {
-  background-color: #55c57a;
 }
 
 .card {
@@ -387,6 +389,7 @@ body {
   display: inline-block;
   background-image: linear-gradient(to right, #7ed56f, #28b485);
   -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
 }
 .feature-box:hover {
