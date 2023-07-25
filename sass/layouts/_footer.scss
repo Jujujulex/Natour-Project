@@ -16,8 +16,8 @@
   }
 
   &__navigation {
-    border-top: 1px solid$color-grey-dark-1;
-    padding-top: 2rem;
+    border-top: 1px solid $color-grey-dark-1;
+    padding-top: 3rem;
     display: inline-block;
   }
 
@@ -25,7 +25,7 @@
     display: inline-block;
 
     &:not(:last-child) {
-      margin-right: 1.5rem;
+      margin-right: 1.7rem;
     }
   }
 
@@ -41,7 +41,7 @@
       text-decoration: none;
       text-transform: uppercase;
       display: inline-block;
-      transition: all 0.2s;
+      transition: all 0.4s;
     }
 
     &:hover,
