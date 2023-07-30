@@ -4,12 +4,20 @@
 
 .u-mb-sm {
   margin-bottom: 1.5rem !important;
+
+  @include respond(tab-port) {
+    margin-bottom: 3rem !important;
+  }
 }
 .u-mb-md {
   margin-bottom: 4rem !important;
 }
 .u-mb-lg {
   margin-bottom: 8rem !important;
+
+  @include respond(tab-port) {
+    margin-bottom: 5rem !important;
+  }
 }
 
 .u-mt-lg {
